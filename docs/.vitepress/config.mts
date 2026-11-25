@@ -21,7 +21,8 @@ export default defineConfig({
         {
           text: 'PHP',
           items: [
-            { text: 'Laravel', link: '/php/laravel' }
+            { text: 'Laravel', link: '/php/laravel' },
+            { text: 'php基础', link: '/php/php基础' }
           ]
         }
       ],
