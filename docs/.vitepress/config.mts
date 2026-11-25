@@ -14,6 +14,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'PHP', link: '/php/laravel' },
+      { text: 'Deploy', link: '/deploy/gitHub_pages_vitePress_deploy' },
     ],
 
     sidebar: {
