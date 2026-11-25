@@ -2,25 +2,44 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  lang: 'zh-CN',
   title: 'Maker Pro',
   description: '个人技术博客，记录技术与成长',
 
   // 对应 GitHub 仓库名称
   base: '/my-blog/',
 
+  // 浏览器标签页图标
+  head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/svg+xml',
+        href: '/favicon.svg'
+      }
+    ]
+  ],
+
   themeConfig: {
-    logo: undefined,
+    // 左上角网站 Logo
+    logo: {
+      src: '/logo.svg',
+      alt: 'Maker Pro'
+    },
+
+    siteTitle: 'Maker Pro',
 
     nav: [
-      { text: '首页', link: '/' },
-      { text: 'PHP', link: '/php/laravel' },
-      { text: 'Deploy', link: '/deploy/gitHub_pages_vitePress_deploy' },
+      { text: '🏠 首页', link: '/' },
+      { text: '🐘 PHP', link: '/php/laravel' },
+      { text: '🚀 Deploy', link: '/deploy/gitHub_pages_vitePress_deploy' },
     ],
 
     sidebar: {
       '/php/': [
         {
-          text: 'PHP',
+          text: '🐘 PHP',
           items: [
             { text: 'Laravel', link: '/php/laravel' },
             { text: 'php基础', link: '/php/php基础' }
@@ -29,7 +48,7 @@ export default defineConfig({
       ],
       '/deploy/': [
         {
-          text: '部署',
+          text: '🚀 部署',
           items: [
             { text: 'GitHub Pages+VitePress 部署手册', link: '/deploy/gitHub_pages_vitePress_deploy' }
           ]
