@@ -31,7 +31,7 @@ export default defineConfig({
         {
           text: '部署',
           items: [
-            { text: 'GitHub Pages+VitePress 部署手册', link: '/php/gitHub_pages_vitePress_deploy' }
+            { text: 'GitHub Pages+VitePress 部署手册', link: '/deploy/gitHub_pages_vitePress_deploy' }
           ]
         }
       ],
